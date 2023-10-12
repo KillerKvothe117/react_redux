@@ -4,8 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 import { store } from "./store.jsx";
 import { Provider } from "react-redux";
-import { fetchUsers } from "./features/users/usersSlice.jsx";
-import { fetchPosts } from "./features/posts/postsSlice.jsx";
+import { fetchUsers } from "./features/users/usersSlice";
+import { fetchPosts } from "./features/posts/postsSlice";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 store.dispatch(fetchUsers());
